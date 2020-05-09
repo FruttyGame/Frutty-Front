@@ -9,9 +9,9 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/newlogo2.png",
+    "icon": "./assets/mylogo.png",
     "splash": {
-      "image": "./assets/newlogo2.png",
+      "image": "./assets/mylogo.png",
       "resizeMode": "cover",
       "backgroundColor": "#a51268"
     },

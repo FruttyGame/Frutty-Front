@@ -11,7 +11,7 @@
     "orientation": "portrait",
     "icon": "./assets/newlogo2.png",
     "splash": {
-      "image": "./assets/MYLOGO.png",
+      "image": "./assets/newlogo2.png",
       "resizeMode": "cover",
       "backgroundColor": "#a51268"
     },

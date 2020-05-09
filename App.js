@@ -3,19 +3,53 @@ import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { StyleSheet, Text, View } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { createAppContainer, createSwitchNavigator, StackNavigator } from "react-navigation";
+import HomeScreen from './src/Components/Screens/HomeScreen.js'
 
-
+//Stack navigation
 const Stack = createStackNavigator();
+
+function MyStack() {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="Chatbot" component={Chatbot} />
+    </Stack.Navigator>
+  );
+}
+
+class HomeStack extends React.Component {
+
+  render() {
+    return (
+      <MyStack/>
+    );
+  }
+
+}
+
+
+//primary switch navigation 
+const AppContainer = createAppContainer(
+  createSwitchNavigator(
+    {
+      HomeScreen: HomeStack,
+    },
+    {
+      initialRouteName: "Starter"
+    }
+  )
+);
 
 export default function App() {
   return (
     <NavigationContainer>
-    <Stack.Navigator>
-      <Stack.Screen name="Home" component={HomeScreen} />
-    </Stack.Navigator>
-  </NavigationContainer>
+      <AppContainer/>
+  
+    </NavigationContainer>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {

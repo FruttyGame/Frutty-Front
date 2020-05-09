@@ -26,7 +26,7 @@
     },
     "android": {
       "adaptiveIcon":{
-      "foregroundImage": "./assets/newlogo.png",  
+      "foregroundImage": "./assets/MYLOGO.png",  
       "backgroundColor": "#074235"
       }
     }

@@ -25,7 +25,9 @@
       "supportsTablet": true
     },
     "android": {
+      "adabtive-icon":{
       "backgroundColor": "#074235"
+      }
     }
   }
 }

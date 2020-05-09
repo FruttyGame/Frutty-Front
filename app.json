@@ -25,7 +25,8 @@
       "supportsTablet": true
     },
     "android": {
-      "adabtive-icon":{
+      "adaptive-icon":{
+      "foregroundImage": "./assets/newlogo.png",  
       "backgroundColor": "#074235"
       }
     }

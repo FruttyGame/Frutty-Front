@@ -9,9 +9,9 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/mylogo.png",
+    "icon": "./assets/MYLOGO.png",
     "splash": {
-      "image": "./assets/mylogo.png",
+      "image": "./assets/MYLOGO.png",
       "resizeMode": "cover",
       "backgroundColor": "#a51268"
     },
@@ -26,7 +26,7 @@
     },
     "android": {
       "adaptiveIcon":{
-      "foregroundImage": "./assets/mylogo.png",  
+      "foregroundImage": "./assets/MYLOGO.png",  
       "backgroundColor": "#a51268"
       }
     }

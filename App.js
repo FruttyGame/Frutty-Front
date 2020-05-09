@@ -35,7 +35,7 @@ const AppContainer = createAppContainer(
       HomeScreen: HomeStack,
     },
     {
-      initialRouteName: "Starter"
+      initialRouteName: "HomeScreen"
     }
   )
 );

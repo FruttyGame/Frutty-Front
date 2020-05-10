@@ -1,3 +1,9 @@
+import React,{Component} from 'react';
+import {View,Image,StyleSheet} from 'react-native';
+
+class Login extends React.Component {
+    render() {
+        return (
 <View style={styles.container}>
         <View style={styles.loginContainer}>
                     <Image resizeMode="contain" style={styles.logo} source={require('../../../assets/MYLOGO.png')} />
@@ -7,7 +13,9 @@
                    <LoginForm />
             </View>
        </View>
-
+        );
+    }
+}
 // define your styles
 const styles = StyleSheet.create({
     container: {
@@ -24,3 +32,5 @@ const styles = StyleSheet.create({
         width: 300,
         height: 100
     }
+});
+export default Login;

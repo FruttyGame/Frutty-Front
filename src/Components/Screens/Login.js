@@ -17,7 +17,9 @@ import * as AuthActions from './src/actions/auth'
 
 import { Provider, connect } from 'react-redux'
 
-import Login from './src/components/LoginScreen'
+import Splash from './src/components/Splash'
+import Login from './src/components/Login'
+import Home from './src/components/Home'
 
 
 export const store = configureStore()

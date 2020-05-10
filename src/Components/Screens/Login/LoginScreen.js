@@ -1,49 +1,56 @@
+import React, { memo, useState } from 'react';
+import { TouchableOpacity, StyleSheet, Text, View } from 'react-native';
+import Background from '../components/Background';
+import Logo from '../components/Logo';
+import Header from '../components/Header';
+import Button from '../components/Button';
+import TextInput from '../components/TextInput';
+import BackButton from '../components/BackButton';
+import { theme } from '../core/theme';
+import { emailValidator, passwordValidator } from '../core/utils';
+import { Navigation } from '../types';
 
-import React, {Component} from 'react';
+type Props = {
+  navigation: Navigation;
+};
 
-import {
-  StyleSheet,
-  Text,
-  Image,
-  View,
-} from 'react-native';
+const LoginScreen = ({ navigation }: Props) => {
+  const [email, setEmail] = useState({ value: '', error: '' });
+  const [password, setPassword] = useState({ value: '', error: '' });
 
+  const _onLoginPressed = () => {
+    const emailError = emailValidator(email.value);
+    const passwordError = passwordValidator(password.value);
 
-export default class LoginScreen extends Component {
+    if (emailError || passwordError) {
+      setEmail({ ...email, error: emailError });
+      setPassword({ ...password, error: passwordError });
+      return;
+    }
 
-  render() {
-      return (
-        <View style= {styles.container}>
-          <View style={styles.logoContainer}>
-            <Image
-             style={styles.logo}
-             source={require('../../assets/images/flogo.png')}></Image>
-             <Text style={styles.title}>Hello please login before join the game</Text>
-          </View>
-        </View>
-      )
-  }
-}
+    navigation.navigate('Dashboard');
+  };
 
-const styles = StyleSheet.create({
-  container: {
-    backgroundColor:'#a51268',
-    flex: 1
-  },
-  logoContainer: {
-    alignItems: 'center',
-    flexGrow: 1,
-    justifyContent: 'center'
-  },
-  logo: {
-    width: "100%",
-    height: "20%"
-  },
-  title: {
-    color: "#FFFFFF",
-    marginTop: 10,
-    width: 160,
-    textAlign: 'center',
-    opacity: 0.9
-  }
-})
+  return (
+    <Background>
+      <BackButton goBack={() => navigation.navigate('HomeScreen')} />
+
+      <Logo />
+
+      <Header>Welcome back.</Header>
+
+      <TextInput
+        label="Email"
+        returnKeyType="next"
+        value={email.value}
+        onChangeText={text => setEmail({ value: text, error: '' })}
+        error={!!email.error}
+        errorText={email.error}
+        autoCapitalize="none"
+        autoCompleteType="email"
+        textContentType="emailAddress"
+        keyboardType="email-address"
+      />
+
+      <TextInput
+        label="Password"

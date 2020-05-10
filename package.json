@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "@react-native-community/masked-view": "0.1.6",
-    "@react-navigation/native": "^5.1.6",
-    "@react-navigation/stack": "^5.2.12",
+    "@react-navigation/native": "^5.2.6",
+    "@react-navigation/stack": "^5.3.1",
     "expo": "~37.0.3",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
@@ -19,17 +19,8 @@
     "react-native-reanimated": "~1.7.0",
     "react-native-safe-area-context": "0.7.3",
     "react-native-screens": "~2.2.0",
-    "react-native-web": "~0.11.7",
-    "react-navigation": "^4.3.8",
-    "firebase": "^3.6.5",
-    "react-native-fbsdk": "^0.4.0",
-    "react-native-router-flux": "^3.38.0",
-    "react-redux": "^5.0.2",
-    "redux": "^3.6.0",
-    "redux-logger": "^2.7.4",
-    "redux-promise": "^0.5.3",
-    "redux-thunk": "^2.1.0"
-    },
+    "react-native-web": "~0.11.7"
+  },
   "devDependencies": {
     "@babel/core": "^7.8.6",
     "babel-preset-expo": "~8.1.0"

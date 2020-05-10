@@ -17,7 +17,7 @@ import { Actions, ActionConst } from 'react-native-router-flux';
 import styles from '../styles/styles';
 
 
-export default class Login extends Component {
+export default class HomeScreen extends Component {
 
   render() {
       return (

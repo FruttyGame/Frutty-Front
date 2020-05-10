@@ -17,7 +17,7 @@ import * as AuthActions from './src/actions/auth'
 
 import { Provider, connect } from 'react-redux'
 
-import Login from './src/components/LoginScreen'
+import Login from './src/components/Login.js'
 
 
 export const store = configureStore()

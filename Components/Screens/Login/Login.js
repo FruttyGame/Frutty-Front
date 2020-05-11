@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import LoginForm from './LoginForm.js';
 import {View,Image,StyleSheet} from 'react-native';
 
 class Login extends React.Component {
@@ -8,7 +9,6 @@ class Login extends React.Component {
         <View style={styles.loginContainer}>
                     <Image resizeMode="contain" style={styles.logo} source={require('../../../assets/MYLOGO.png')} />
          </View>
-
             <View style={styles.formContainer}>
                    <LoginForm />
             </View>

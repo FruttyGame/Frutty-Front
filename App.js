@@ -1,6 +1,6 @@
 import React from 'react';
 import 'react-native-gesture-handler';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, creaeSwitchNavigator} from '@react-navigation/native';
 import { StyleSheet, Text, View } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Login from './Components/Screens/Login/AuthScreen.js'
@@ -8,7 +8,7 @@ import AuthScreen from './Components/Screens/Login/AuthScreen.js';
 
 
 const Stack = createStackNavigator();
-
+const MainNavigator = creaeSwitchNavigator();
 export default function App() {
   return (
     <NavigationContainer>

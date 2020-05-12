@@ -1,5 +1,5 @@
-import { NavigationContainer, creaeSwitchNavigator} from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import { NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
 import AuthScreen from './Components/Screens/Login/AuthScreen.js';
 import Mainmenu from './Components/Screens/MainMenu/MainMenu.js';
 

@@ -5,23 +5,13 @@ import { AppLoading } from 'expo';
 import * as Font from 'expo-font';
 import ReduxThunk from 'redux-thunk';
 import MainNavigator from './Navigator';
+import { View, Text } from 'react-native';
 
 export default function App() {
   const [fontLoaded, setFontLoaded] = useState(false);
 
-  if (!fontLoaded) {
-    return (
-      <AppLoading
-        startAsync={fetchFonts}
-        onFinish={() => {
-          setFontLoaded(true);
-        }}
-      />
-    );
-  }
+ 
   return (
-    <Provider store={store}>
-      <MainNavigator />
-    </Provider>
+    <View><Text>Hello</Text></View>
   );
 }

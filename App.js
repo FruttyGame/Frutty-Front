@@ -6,6 +6,6 @@ export default function App() {
 
  
   return (
-    <View><Text>Hi</Text></View>
+    <View><Text>He</Text></View>
   );
 }

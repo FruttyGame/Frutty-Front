@@ -1,5 +1,5 @@
 import React from 'react';
-import LoginUI from './src/Screens/LoginUI';
+import LoginUI from './src/Screens/Login/LoginUI';
 import { View, Text } from 'react-native';
 import {NavigationContainer, StackActions} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';

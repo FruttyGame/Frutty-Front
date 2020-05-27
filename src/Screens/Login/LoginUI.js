@@ -27,6 +27,11 @@ const style = StyleSheet.create({
         flex: 1
         },
     logoContainer: {
+        alignItems: 'center',
+        flexGrow: 1,
+        justifyContent: 'center'
+        },
+    logo: {
         width: '100%',
         height: '100%'
     },    

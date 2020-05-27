@@ -4,7 +4,6 @@ import HomeScreen from './src/Screens/HomeScreen/HomeScreen';
 import { View, Text } from 'react-native';
 import {NavigationContainer, StackActions} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import HomeScreen from './src/Screens/HomeScreen/HomeScreen';
 
 const Stack = createStackNavigator();
 

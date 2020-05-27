@@ -1,6 +1,6 @@
 import React from 'react';
 import LoginUI from './src/Screens/Login/LoginUI';
-import LoginUI from './src/Screens/HomeScreen/HomeScreen';
+import HomeScreen from './src/Screens/HomeScreen/HomeScreen';
 import { View, Text } from 'react-native';
 import {NavigationContainer, StackActions} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';

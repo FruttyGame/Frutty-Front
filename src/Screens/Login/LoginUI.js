@@ -9,7 +9,7 @@ class LoginUI extends Component {
         <View style={style.MContainer}>
         <ImageBackground source={require('../Login/images/background.png')} style={style.Container}>
         <View style={style.logoContainer}>
-            <Image source={require('./images/flogo.png')} />
+            <Image style={style.logo} source={require('./images/frutty.png')} />
         </View>
         </ImageBackground>
         </View>

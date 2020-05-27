@@ -10,7 +10,7 @@ export default function App() {
  
   createHomeStack = () =>
     <Stack.Navigator>
-    <Stack.Screen />
+    <Stack.Screen name="LoginUI" component={LoginUI}/>
     </Stack.Navigator>
   
   return (

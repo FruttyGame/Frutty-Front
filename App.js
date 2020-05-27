@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { View, Text } from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
+
 
 export default function App() {
-  const [fontLoaded, setFontLoaded] = useState(false);
-
  
   return (
-    <View><Text>He</Text></View>
+    <NavigationContainer></NavigationContainer>
   );
 }

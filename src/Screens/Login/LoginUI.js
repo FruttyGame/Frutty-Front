@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {View,Text} from 'react-native';
+import {View,Text, Button} from 'react-native';
 
 class LoginUI extends Component {
 
@@ -7,6 +7,7 @@ class LoginUI extends Component {
     return (
         <View>
             <Text>LoginUI</Text>
+            <Button onPress={() => this.props.navigation.navigate("HomeScreen")} />
         </View>
     );
     }

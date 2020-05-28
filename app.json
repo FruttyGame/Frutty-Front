@@ -23,6 +23,7 @@
     ],
     "ios": {
       "bundleIdentifier": "com.fruttiez.fruttygame",
+      "buildNumber":"1.0.0",
       "supportsTablet": true
     },
     "android": {

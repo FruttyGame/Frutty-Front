@@ -28,6 +28,7 @@
     },
     "android": {
       "package": "com.fruttiez.fruttygame" ,
+      "version": 1,
       "adaptiveIcon":{
       "foregroundImage": "./assets/MYLOGO.png",  
       "backgroundColor": "#a51268"

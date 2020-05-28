@@ -25,6 +25,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.fruttiez.fruttygame" ,
       "adaptiveIcon":{
       "foregroundImage": "./assets/MYLOGO.png",  
       "backgroundColor": "#a51268"
